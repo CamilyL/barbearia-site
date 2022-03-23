@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&family=Permanent+Marker&display=swap');
+
+body{
+    background: url('./assets/bg.jpg') top center no-repeat;
+}
+
+header{
+    font-family: 'Cormorant', serif;
+}
+
