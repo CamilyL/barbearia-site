@@ -2,16 +2,62 @@
     text-decoration: none;
 }
 
-.img-logo{
-    width: 70px;
-    height: 200px;
+.row{
+  font-family: 'Bebas Neue', cursive;
+  color: #fff;
+  font-size: 50px;
 }
+
+.carrossel{
+  width: 100vw;
+  height: 800px;
+  
+  overflow: hidden;
+}
+
+.carrossel ul{
+  display: flex;
+  list-style: none;
+  width: 300vw;
+  height: 600px;
+}
+
+.carrossel li{
+  position: relative;
+  animation: slide 15s infinite ease-out;
+}
+
+.carrossel img{
+  width: 100vw;
+  margin-top: -150px;
+}
+
+.about{
+  background: url("../assets/bg.jpg");
+  background-size: cover;
+}
+
+@keyframes slide{
+  0%{left: 0px}
+  20%{left: 0px}
+
+  30%{left: -100vw}
+  50%{left: -100vw}
+
+  60%{left: -200vw}
+  90%{left: -200vw}
+
+  100%{left: 0px}
+}
+
+
+
 
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 #header {
-    background: rgba(25, 25, 25, 0.95);
+    background: black;
     transition: all 0.5s;
     z-index: 997;
     height: 100px;
@@ -32,7 +78,7 @@
     color: #fff;
   }
   #header .logo img {
-    max-height: 40px;
+    max-height: 80px;
   }
   
   .scrolled-offset {
